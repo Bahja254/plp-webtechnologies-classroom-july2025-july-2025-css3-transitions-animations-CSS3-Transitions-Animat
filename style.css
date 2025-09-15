@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: #f0f4f8;
+}
+
+/* Part 1: Button Hover Animation */
+#hoverBtn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  background: #0077cc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#hoverBtn:hover {
+  background: #005fa3;
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Part 2 & 3: Box Animation */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+  background: coral;
+  border-radius: 8px;
+  transition: transform 1s ease, background 0.5s ease;
+}
+
+/* Animation Class (added via JS) */
+.animate {
+  transform: translateY(-100px) rotate(180deg);
+  background: teal;
+}
+
+/* Calculator */
+.calculator {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
